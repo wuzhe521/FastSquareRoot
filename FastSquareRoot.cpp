@@ -9,7 +9,7 @@ float F_rsqrt(float Number)
 	x2 = Number * 0.5;
 	y = Number;
 	i = *(long *)&y;
-	i = (long)532496103 + (i >> 1);
+	i = 0x1FBD3EE7ul + (i >> 1);
 	y = *(float *)&i;
 	y = y / 2 + xhalfs / y;
 	y = y / 2 + xhalfs / y;
